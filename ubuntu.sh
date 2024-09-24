@@ -21,4 +21,4 @@ sudo chown -R www-data:www-data /var/www/html
 sudo chmod -R 755 /var/www/html
 
 sudo systemctl restart apache2
-echo "WordPress installation completed. You can access it at http://your_server_ip/"
+sudo rm -r /var/www/html/index.html
