@@ -16,9 +16,10 @@ sudo tar -xzf latest.tar.gz
 sudo rm -rf latest.tar.gz
 
 sudo mv wordpress/* .
+sudo rm -f index.html
 
 sudo chown -R www-data:www-data /var/www/html
 sudo chmod -R 755 /var/www/html
 
 sudo systemctl restart apache2
-sudo rm -r /var/www/html/index.html
+
